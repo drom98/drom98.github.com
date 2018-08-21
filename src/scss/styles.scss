@@ -88,34 +88,64 @@ body {
         text-decoration: none;
         font-size: 18px;
     }
-
-    :hover {
-        -webkit-box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.18);
-        -moz-box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.18);
-        box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.18);
-    }
 }
 
 .one {
     @include github(top left, $github-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-github;
+    }
 }
 
 .two {
     @include instagram(top left, $instagram-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-instagram;
+    }
 }
 
 .three {
     @include twitter(top left, $twitter-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-twitter;
+    }
 }
 
 .four {
     @include linkedin(top left, $linkedin-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-linkedin;
+    }
 }
 
 .five {
     @include dribble(top left, $dribble-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-dribble;
+    }
 }
 
 .six {
     @include email(top left, $email-color);
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        @include shadow-email;
+    }
 }

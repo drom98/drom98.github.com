@@ -100,3 +100,45 @@ $email-color: #0F2027, #203A43, #2C5364;
     background: -o-linear-gradient($direction, $email-color);
     background: linear-gradient($direction, $email-color);
 }
+
+//Github card shadow
+@mixin shadow-github {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#232526, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#232526, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#232526, .3);
+}
+
+//Instagram card shadow
+@mixin shadow-instagram {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#b21f1f, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#b21f1f, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#b21f1f, .3);
+}
+
+//Twitter card shadow
+@mixin shadow-twitter {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#00D2FF, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#00D2FF, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#00D2FF, .3);
+}
+
+//Linkedin card shadow
+@mixin shadow-linkedin {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#0073B1, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#0073B1, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#0073B1, .3);
+}
+
+//Dribble card shadow
+@mixin shadow-dribble {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#F953C6, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#F953C6, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#F953C6, .3);
+}
+
+//Email card shadow
+@mixin shadow-email {
+    -webkit-box-shadow: 0px 0px 100px 0px transparentize(#203A43, .3);
+    -moz-box-shadow: 0px 0px 100px 0px transparentize(#203A43, .3);
+    box-shadow: 0px 0px 100px 0px transparentize(#203A43, .3);
+}
