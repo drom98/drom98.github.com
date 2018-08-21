@@ -1,0 +1,102 @@
+//box bg color
+$color-container: #ebebeb;
+$text-color: #262626;
+
+//bg-gradient
+body {
+    background: linear-gradient(-85deg, #b92b27, #1565C0, #373B44, #4286f4);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+//Github card color
+$github-color: #232526, #414345;
+@mixin github($direction, $color) {
+    background: -webkit-linear-gradient($direction, $github-color);
+    background: -moz-linear-gradient($direction, $github-color);
+    background: -o-linear-gradient($direction, $github-color);
+    background: linear-gradient($direction, $github-color);
+}
+
+//Instagram card color
+$instagram-color: #1a2a6c, #b21f1f, #fdbb2d;
+@mixin instagram($direction, $color) {
+    background: -webkit-linear-gradient($direction, $instagram-color);
+    background: -moz-linear-gradient($direction, $instagram-color);
+    background: -o-linear-gradient($direction, $instagram-color);
+    background: linear-gradient($direction, $instagram-color);
+}
+
+//Twitter card color
+$twitter-color: #00D2FF, #3A7BD5;
+@mixin twitter($direction, $color) {
+    background: -webkit-linear-gradient($direction, $twitter-color);
+    background: -moz-linear-gradient($direction, $twitter-color);
+    background: -o-linear-gradient($direction, $twitter-color);
+    background: linear-gradient($direction, $twitter-color);
+}
+
+//Linkedin card color
+$linkedin-color: #0073B1, #0F5377;
+@mixin linkedin($direction, $color) {
+    background: -webkit-linear-gradient($direction, $linkedin-color);
+    background: -moz-linear-gradient($direction, $linkedin-color);
+    background: -o-linear-gradient($direction, $linkedin-color);
+    background: linear-gradient($direction, $linkedin-color);
+}
+
+//Dribble card color
+$dribble-color: #F953C6, #B91D73;
+@mixin dribble($direction, $color) {
+    background: -webkit-linear-gradient($direction, $dribble-color);
+    background: -moz-linear-gradient($direction, $dribble-color);
+    background: -o-linear-gradient($direction, $dribble-color);
+    background: linear-gradient($direction, $dribble-color);
+}
+
+//Email card color
+$email-color: #0F2027, #203A43, #2C5364;
+@mixin email($direction, $color) {
+    background: -webkit-linear-gradient($direction, $email-color);
+    background: -moz-linear-gradient($direction, $email-color);
+    background: -o-linear-gradient($direction, $email-color);
+    background: linear-gradient($direction, $email-color);
+}
