@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'font';
 @import 'mixins';
+@import 'breakpoints';
 
 body {
     height: 100vh;
@@ -25,6 +26,12 @@ body {
     -webkit-box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
+
+    //Breackpoints
+    @include breakpoint(xs) {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
     h1 {
         text-align: center;
