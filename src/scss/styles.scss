@@ -2,12 +2,52 @@
 @import 'font';
 @import 'mixins';
 @import 'breakpoints';
+@import 'responsive';
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(-85deg, #b92b27, #1565C0, #373B44, #4286f4);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    @-webkit-keyframes Gradient {
+	    0% {
+		    background-position: 0% 50%
+	    }
+	    50% {
+		    background-position: 100% 50%
+	    }
+	    100% {
+		    background-position: 0% 50%
+	    }
+    }
+    @-moz-keyframes Gradient {
+	    0% {
+		    background-position: 0% 50%
+	    }
+	    50% {
+		    background-position: 100% 50%
+	    }
+	    100% {
+		    background-position: 0% 50%
+	    }
+    }
+
+    @keyframes Gradient {
+	    0% {
+		    background-position: 0% 50%
+	    }
+	    50% {
+		    background-position: 100% 50%
+	    }
+	    100% {
+		    background-position: 0% 50%
+	    }
+    }
 }
 
 .container {
@@ -25,14 +65,6 @@ body {
     -webkit-box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 85px 0px rgba(0,0,0,0.4);
-
-    //Breackpoints
-    @include breakpoint(xs) {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 0%;
-        position: absolute;
-    }
 
     h1 {
         text-align: center;

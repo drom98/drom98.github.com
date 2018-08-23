@@ -6,7 +6,20 @@ html, body {
   margin: 0;
   position: relative; }
 
+@media (max-width: 767px) {
+  body {
+    background-color: #ebebeb !important; }
+  .container {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; } }
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(-85deg, #b92b27, #1565C0, #373B44, #4286f4);
   background-size: 400% 400%;
   -webkit-animation: Gradient 5s ease infinite;
@@ -37,12 +50,6 @@ body {
   100% {
     background-position: 0% 50%; } }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -58,12 +65,6 @@ body {
   -webkit-box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.4); }
-  @media (max-width: 767px) {
-    .container {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 0%;
-      position: absolute; } }
   .container h1 {
     text-align: center;
     margin: 0;
