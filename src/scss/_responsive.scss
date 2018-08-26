@@ -1,6 +1,10 @@
 @include breakpoint(xs) {
     body {
-        background-color: $color-container !important;
+        height: 100%;
+    }
+
+    body, html {
+        background: $color-container !important;
     }
 
     .container {
